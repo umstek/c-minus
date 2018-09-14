@@ -44,3 +44,4 @@ arg_list: arg_list ',' expression | expression;
 
 ID: [a-zA-Z]+;
 NUMBER: [1-9][0-9]*;
+WS: [ \t\r\n]+ -> channel(HIDDEN);
