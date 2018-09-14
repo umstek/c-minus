@@ -4,3 +4,4 @@
 !compile.bat
 !grun.bat
 !.gitignore
+!./samples/*.cm

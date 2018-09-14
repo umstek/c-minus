@@ -42,6 +42,7 @@ call: ID '(' args ')';
 args: arg_list?;
 arg_list: arg_list ',' expression | expression;
 
+COMMENT: '/*' (.)*? '*/' -> channel(HIDDEN);
 ID: [a-zA-Z]+;
-NUMBER: [1-9][0-9]*;
+NUMBER: '0' | [1-9][0-9]*;
 WS: [ \t\r\n]+ -> channel(HIDDEN);
